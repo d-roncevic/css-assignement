@@ -1,69 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culture -Explore Croatia, Albania and Kenya</title>
-    <link rel="" href="">
-    <link rel="" href="">
-    <link rel="" href="">
-    <link rel="stylesheet" href="./style/main.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Culture -Explore Croatia, Albania and Kenya</title>
+        <link rel="" href="">
+        <link rel="" href="">
+        <link rel="" href="">
+        <link rel="stylesheet" href="./style/main.css">
+    </head>
 
-<body>
-    <header>
-       <nav>
-         <a href="index.html" class="site-logo" aria-label="CultureTrip home">
-            <div class="logo-icon" aria-hidden="true">
-                <span class="logo-globe">&#970;</span>
-            </div>
-            <span class="logo-wordmark">Culture<span class="logo-accent">Trip</span></span>
-        </a>
+    <body>
+        <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo-link">
+                <img  
+                src="https://fv5-3.files.fm/thumb_show.php?i=fm3wueypa3&view&v=1&PHPSESSID=87430cd6178df5c95ac52cfaa7c8d4dec4409ffa"
+                alt="CultureTrip logo"
+                class="logo-image"
+                />
+            </a>
 
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="kenya.html">Kenya</a></li>
-            <li><a href="croatia.html">Croatia</a></li>
-            <li><a href="albania.html">Albania</a></li>
-        </ul>
-       </nav>
-    </header>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="kenya.html" class="nav-link">Kenya</a></li>
+                <li class="nav-item"><a href="croatia.html" class="nav-link">Croatia</a></li>
+                <li class="nav-item"><a href="albania.html" class="nav-link">Albania</a></li>
+            </ul>
+        </nav>
+        </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-inner">
-                <div class="hero-text">
-                    <p class="hero-eyebrow">Three Countries. One journey.</p>
-                    <h1>The world is full of stories. Come find yours.</h1>
-                    <p class="hero-sub">
-                        Dive deep into the cultures, cuisines, and landscapes of Kenya, Croatia, and Albania — three extraordinary countries that will change the way you see the world.
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-label">Three Countries. One journey.</p>
+                        <h1 class="hero-title">The world is full of stories. Come find yours.</h1>
+                        <p class="hero-description">
+                            Dive deep into the cultures, cuisines, and landscapes of Kenya, Croatia, and Albania — three extraordinary countries that will change the way you see the world.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#countries-section" class="button button-primary">Explore Now</a>
+                            <a href="#about-section" class="button button-outline-light">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrap">
+                        <img 
+                        src="https://media.istockphoto.com/id/516449022/photo/lady-with-kayak.webp?a=1&b=1&s=612x612&w=0&k=20&c=Cc3FNKWwGzohs18q-uytfVVHX7beI_nk-k3mCtML2L4="
+                        alt="Culture Adventure Image"
+                        class="hero-image"
+                        />
+                        
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="about-section" id="about-section">
+                <div class="about-content">
+                    <h2 class="section-title">Why CultureTrip</h2>
+                    <p class="about-text">
+                        CultureTrip is a student-led cultural exploration project bringing together three unique countries — Kenya from East Africa, Croatia from Southern Europe,and Albania from the Western Balkans. Each page is researched and crafted by a team member from that country, giving you an authentic local perspective on travel destinations, traditional foods, and living cultures.
                     </p>
-                    <div class="hero-actions">
-                        <a href="#countries" class="btn-primary">Explore Now</a>
-                        <a href="#about" class="btn-ghost">Learn More</a>
+                </div>
+            </section>
+
+            <section class="countries-section" id="countries-section">
+                <div class="countries-heading">
+                    <h2 class="section-title">Explore Our Countries.</h2>
+                    <p class="countries-subtitle">
+                        Click on a country to discover its top destinations famous foods, and rich cultural traditions.
+                    </p>
+                </div>
+                <div class="countries-grid">
+                    <article class="country-card">
+                        <div class="card-image-wrap">
+                            <img 
+                            src="https://media.istockphoto.com/id/2070215510/photo/skyline-of-central-business-district-and-uhuru-park-nairobi-kenya.jpg?s=612x612&w=0&k=20&c=yj4P72IBE7BogVT6aI7jIj5o4mnUBHeeg_VLnxTupNc="
+                            alt="Nairobi city skyline, the capital of Kenya"
+                            class="card-image"
+                            />
+                            <span class="card-flag">🇰🇪</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="card-region-tag">East Africa</span>
+                                <span class="card-capital">📍 Nairobi</span>
+                            </div>
+                            <h3 class="card-title">Kenya</h3>
+                            <p class="card-description">
+                                A land of sweeping savannas, snow-capped mountains, and turquoise coastlines. Kenya is home to the world-famous Maasai Mara, vibrant Swahili culture, and some of the most flavourful cuisine on the continent. From the Great Migration to the buzzing streets of Nairobi, Kenya pulses with life and wonder.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>✓ Maasai Mara National Reserve</li>
+                                <li>✓ Nyama Choma & Pilau cuisine</li>
+                                <li>✓ Maasai & Kikuyu traditions</li>
+                            </ul>
+                            <a href="kenya.html" 
+                            class="button   button-outline-dark">Discover Kenya →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="country-card">
+                        <div class="card-image-wrap">
+                            <img 
+                            src="https://plus.unsplash.com/premium_photo-1661962766577-e216450f01e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8emFncmViJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Zagreb city center, the capital of Croatia"
+                            class="card-image"
+                            />
+                            <span class="card-flag">🇭🇷</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="card-region-tag">Southern Europe</span>
+                                <span class="card-capital">📍 Zagreb</span>
+                            </div>
+                            <h3 class="card-title">Croatia</h3>
+                            <p class="card-description">
+                                Nestled between the Adriatic Sea and the Pannonian Plains, Croatia is a country of stunning contrasts. Medieval walled cities like Dubrovnik sit alongside cascading waterfalls at Plitvice Lakes. Croatian culture weaves together Mediterranean warmth, Slavic heritage and centuries of history.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>✓ Dubrovnik Old City & Plitvice Lakes</li>
+                                <li>✓ Black risotto & Peka cuisine</li>
+                                <li>✓ Klapa singing & Lace weaving</li>
+                            </ul>
+                            <a href="croatia.html" 
+                            class="button   button-outline-dark">Discover Croatia →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="country-card">
+                        <div class="card-image-wrap">
+                            <img 
+                            src="https://media.istockphoto.com/id/2208741785/photo/mosque-of-namazgah-tirana-from-drone.webp?a=1&b=1&s=612x612&w=0&k=20&c=VeK6BVpNIal5rqLsoCEu5V-Xu7ejjrnr8637Lmdv10A="
+                            alt="Tirana, the capital of Albania"
+                            class="card-image"
+                            />
+                            <span class="card-flag">🇦🇱</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meta">
+                                <span class="card-region-tag">Western Balkans</span>
+                                <span class="card-capital">📍 Tirana</span>
+                            </div>
+                            <h3 class="card-title">Albania</h3>
+                            <p class="card-description">
+                                Europe's best-kept secret. Albania's dramatic mountain ranges, ancient ruins, and pristine Riviera beaches remain largely undiscovered by mass tourism. Its people are famously warm, bound by the ancient code of <em>Besa</em> — a solemn promise of honour and hospitality that defines Albanian identity to this day.
+                            </p>
+                            <ul class="card-highlights">
+                                <li>✓ Albanian Riviera & Butrint Ruins</li>
+                                <li>✓ Byrek & Fërgesa cuisine</li>
+                                <li>✓ Besa code & Iso-Polyphony music</li>
+                            </ul>
+                            <a href="kenya.html" 
+                            class="button   button-outline-dark">Discover Albania →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Countries Explored</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-box">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Top Destinations</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-box">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Tradiotional Foods</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-box">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Cultural Traditions</span>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="img-placeholder">Hero Image</div>
+            </section>
 
+            <section class="quote-section">
+                <blockquote class="quote-block">
+                    <p class="quote-text">
+                        "Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many of our people need it sorely on these accounts."
+                    </p>
+                    <cite class="quote-author">Mark Twain</cite>
+                </blockquote>
+            </section>
+
+            <section class="cta-section">
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h3 class="cta-title">Ready to start exploring?</h3>
+                        <p class="cta-subtitle">
+                            Pick a country and begin your   cultural journey today.
+                        </p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="kenya.html" class="button button-outline-light">Kenya</a>
+                        <a href="croatia.html" class="button button-outline-light">Croatia</a>
+                        <a href="albania.html" class="button button-outline-light">Albania</a>
+                    </div>
                 </div>
-
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-link">
+                    <img 
+                    src="https://fv5-3.files.fm/thumb_show.php?i=fm3wueypa3&view&v=1&PHPSESSID=87430cd6178df5c95ac52cfaa7c8d4dec4409ffa"
+                    alt="CultureTrip"
+                    class="logo-image"
+                    />
+                </a>
+                <p class="footer-tagline">Three countries. One shared world.</p>
             </div>
-        </section>
+            <nav class="footer-nav" aria-label="Footer page links">
+                <h4 class="footer-column-title">Pages</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="kenya.html" class="footer-link">Kenya</a></li>
+                    <li><a href="croatia.html" class="footer-link">Croatia</a></li>
+                    <li><a href="albania.html" class="footer-link">Albania</a></li>
+                </ul>
+            </nav>
+            <div class="footer-team">
+                <h4 class="footer-column-title">Our Team</h4>
+                <ul class="footer-team-list">
+                    <li>🌍 Kenya — Nairobi</li>
+                    <li>🌍 Croatia — Zagreb</li>
+                    <li>🌍 Albania — Tirana</li>
 
-        <section class="about-section" id="about">
-            <div class="about-inner">
-                <h2>Why CultureTrip</h2>
-                <p>
-                    CultureTrip is a student-led cultural exploration project bringing together three unique countries — Kenya from East Africa, Croatia from Southern Europe,and Albania from the Western Balkans. Each page is researched and crafted by a team member from that country, giving you an authentic local perspective on travel destinations, traditional foods, and living cultures.
-
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    Copyright &copy; 2025 CultureTrip. All rights reserved. Built with HTML & CSS.
                 </p>
             </div>
-
-        </section>
-    </main>
-    <footer></footer>
-</body>
+        </footer>
+    </body>
 
 </html>
