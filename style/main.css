@@ -85,16 +85,32 @@ ul {
 .logo-link {
   display: flex;
   align-items: center;
+  gap: 12px;
   text-decoration: none;
 }
 
 .logo-image {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   object-fit: cover;
   border-radius: 50%;           
   border: 2px solid var(--blue);
+  flex-shrink: 0;
 }
+
+
+.logo-name {
+  font-size: var(--size-logo);   
+  font-weight: 900;
+  color: var(--light);           
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.logo-name-accent {
+  color: var(--blue);
+}
+
 
 
 /* ============================================================
@@ -103,7 +119,7 @@ ul {
    ============================================================ */
 .header {
   background-color: var(--dark);
-  padding: var(--gap-sm) var(--gap-md);
+  padding: 12px var(--gap-md);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -551,7 +567,9 @@ ul {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: var(--gap-lg);
+  align-items: start;
 }
+
 
 .footer-brand {
   display: flex;
