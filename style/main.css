@@ -1,8 +1,50 @@
+/*=======================================================
+FONTS
+These @font-face rules tell the browser where to find the
+Roboto font files we downloaded.
+They point to the file paths where the fonts are located in
+the file structure.
+=========================================================*/
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/static/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/static/Roboto-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/static/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/static/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Fonts/static/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 /* =======================================================
 Putting the main colors, fonts and sizes on the root so that 
 they can be used accross all pages of the website.
 ==========================================================*/
-
 
 :root {
  
@@ -252,7 +294,6 @@ ul {
   margin-bottom: var(--gap-sm);
 }
 
-/* 18px #E5E7EB — */
 .hero-description {
   font-size: var(--size-nav);
   color: var(--grey);
@@ -489,7 +530,6 @@ ul {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-
 /* ============================================================
    QUOTE SECTION
    ============================================================ */
@@ -642,120 +682,15 @@ ul {
 }
 
 
-/* ============================================================
-   KENYA PAGE — PAGE HERO
-   same colors and styles to be used in croatia and albania pages
-   ============================================================ */
-.page-hero {
-  background-color: var(--dark);
-  padding: var(--gap-xl) var(--gap-md);
-  text-align: center;
-}
 
-.page-hero-title {
-  font-size: var(--size-hero);
-  font-weight: 900;
-  color: var(--light);
-  margin-bottom: var(--gap-sm);
-}
-
-.page-hero-description {
-  font-size: var(--size-nav);
-  color: var(--grey);
-  max-width: 620px;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-
-
-/* ============================================================
-   KENYA PAGE — FEATURE CARDS
-   ============================================================ */
-.content-section {
-  padding: var(--gap-xl) var(--gap-md);
-}
-
-.content-section:nth-child(even) {
-  background-color: #F9FAFB;
-}
-
-.content-section-subtitle {
-  text-align: center;
-  color: var(--text-muted);
-  font-size: var(--size-body);
-  max-width: 600px;
-  margin: 0 auto var(--gap-lg);
-  line-height: 1.7;
-}
-
-.feature-grid {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--gap-md);
-}
-
-.feature-card {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--border-colour);
-  background-color: var(--body-bg);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-}
-
-.feature-card-image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.feature-card-body {
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.feature-card-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--dark);
-}
-
-.feature-card-text {
-  font-size: var(--size-small);
-  color: #4B5563;
-  line-height: 1.7;
-}
-
-.feature-tag {
-  display: inline-block;
-  background-color: var(--blue);
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  padding: 3px 10px;
-  border-radius: 20px;
-  align-self: flex-start;
-}
 
 
 /* ============================================================
    RESPONSIVENESS
    ============================================================ */
 
-/* Tablet */
+/*TABLET (screens up to 900px wide) */
+
 @media (max-width: 900px) {
   .countries-grid,
   .feature-grid {
@@ -775,8 +710,11 @@ ul {
   }
 }
 
-/* Mobile */
+
+/* MOBILE (screens up to 650px wide) */
+
 @media (max-width: 650px) {
+
   :root {
     --size-hero:    32px;
     --size-heading: 24px;
@@ -810,6 +748,7 @@ ul {
     gap: var(--gap-md);
   }
 
+  
   .quote-text {
     font-size: 20px;
   }
@@ -820,9 +759,14 @@ ul {
   }
 }
 
-/* Very small mobile */
+/* VERY SMALL MOBILE (screens up to 480px wide) */
 @media (max-width: 480px) {
-  .nav-list {
+  .nav-list,
+  .nav-links {
     display: none;
+  }
+
+  .nav {
+    justify-content: center;
   }
 }
