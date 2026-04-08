@@ -1,7 +1,7 @@
 /*=======================================================
 FONTS
 These @font-face rules tell the browser where to find the
-Roboto font files we downloaded.
+Roboto font files we downloaded. 
 They point to the file paths where the fonts are located in
 the file structure.
 =========================================================*/
@@ -33,6 +33,7 @@ the file structure.
   font-weight: 700;
   font-style: normal;
 }
+
 
 @font-face {
   font-family: 'Roboto';
@@ -206,7 +207,6 @@ ul {
   color: var(--blue);
   border-bottom-color: var(--blue);
 }
-
 
 /* ============================================================
    BUTTONS 
@@ -599,7 +599,6 @@ ul {
   flex-wrap: wrap;
 }
 
-
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -682,8 +681,129 @@ ul {
 }
 
 
+/* ============================================================
+   KENYA PAGE
+   The same styles anx colors to be reused on the croatia and albania
+   pages
+   ============================================================ */
+.page-hero {
+  background-color: var(--dark);
+  padding: var(--gap-xl) var(--gap-md);
+  text-align: center;
+}
+
+.page-hero-label {
+  font-size: var(--size-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--blue);
+  margin-bottom: var(--gap-sm);
+}
+
+.page-hero-title {
+  font-size: var(--size-hero);
+  font-weight: 900;
+  color: var(--light);
+  margin-bottom: var(--gap-sm);
+}
+
+.page-hero-description {
+  font-size: var(--size-nav);
+  color: var(--grey);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
 
 
+/* ============================================================
+   KENYA PAGE — CONTENT SECTIONS
+   Styles for Destinations, Foods, and Culture sections.
+  
+   ============================================================ */
+.content-section {
+  padding: var(--gap-xl) var(--gap-md);
+  background-color: var(--body-bg);
+}
+
+.content-section:nth-of-type(even) {
+  background-color: #F9FAFB;
+}
+
+
+.content-section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--size-body);
+  max-width: 600px;
+  margin: 0 auto var(--gap-lg);
+  line-height: 1.7;
+}
+
+.feature-grid {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-md);
+}
+
+
+.feature-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-colour);
+  background-color: var(--body-bg);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.feature-card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.feature-tag {
+  display: inline-block;
+  background-color: var(--blue);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.feature-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.feature-card-text {
+  font-size: var(--size-small);
+  color: #4B5563;
+  line-height: 1.7;
+}
 
 /* ============================================================
    RESPONSIVENESS
