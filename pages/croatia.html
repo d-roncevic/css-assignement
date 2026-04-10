@@ -1,81 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Croatia - CultureTrip</title>
+    <meta
+      name="description"
+      content="This is a website about Croatia, country in Europe. It includes information about its culture, history, and tourist attractions."
+    />
+    <meta name="author" content="Darian Rončević" />
+    <link rel="stylesheet" href="../style/croatia.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Croatia</title>
-    <meta name="description"
-        content="This is a website about Croatia, country in Europe. It includes information about its culture, history, and tourist attractions.">
-    <meta name="author" content="Darian Rončević">
-    <link rel="stylesheet" href="../style/croatia.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <div class="navigation">
-            <a href="../index.html">Homepage</a>
-            <nav>
-                <a href="../pages/albania.html">Albania</a>
-                <a href="../pages/croatia.html">Croatia</a>
-                <a href="../pages/kenya.html">Kenya</a>
-            </nav>
-        </div>
-        <div class="hero">
-            <section class="hero-section">
-                <h1>This is a website about Croatia</h1>
-                <p class="hero-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quisquam earum
-                    asperiores, expedita necessitatibus et, libero repellendus perspiciatis iste qui delectus. Saepe
-                    voluptatem nemo sit dicta dolor voluptate eaque fuga!</p>
-                <button class="hero-btn">Sign up</button>
-            </section>
-            <img class="hero-img" src="" alt="This an image of Croatia, need to change later with an actual image">
-        </div>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="https://fv5-3.files.fm/thumb_show.php?i=fm3wueypa3&view&v=1&PHPSESSID=87430cd6178df5c95ac52cfaa7c8d4dec4409ffa"
+            alt="CultureTrip logo"
+            class="logo-image"
+          />
+          <span class="logo-name"
+            >Culture<span class="logo-name-accent">Trip</span></span
+          >
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="kenya.html" class="nav-link">Kenya</a>
+          </li>
+          <li class="nav-item">
+            <a href="croatia.html" class="nav-link active">Croatia</a>
+          </li>
+          <li class="nav-item">
+            <a href="albania.html" class="nav-link">Albania</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="info-section">
-            <center>
-                <h2 class="info-text">Some random information</h2>
-            </center>
-            <div class="img-container">
-                <a href="#food">
-                    <img src="../assets/images/food.webp" alt="Food in Croatia">
-                </a>
-                <a href="#culture">
-                    <img src="../assets/images/culture.webp" alt="Culture in Croatia">
-                </a>
-                <a href="#sports">
-                    <img src="../assets/images/sports.avif" alt="Sports in Croatia">
-                </a>
-                <a href="#history">
-                    <img src="../assets/images/history.jpg" alt="History in Croatia">
-                </a>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Discover Croatia</h1>
+          <p>Explore food, sports and breathtaking destinations</p>
+          <a href="#main" class="btn">Explore more ↓</a>
+        </div>
+      </section>
+      <section id="main">
+        <article>
+          <div class="section-img">
+            <img src="../assets/images/food.webp" />
+          </div>
+          <div class="section-text border-left" id="food">
+            <h2>Food</h2>
+            <p>
+              Croatian cuisine is a unique mix of Mediterranean and Central
+              European influences, shaped by regional traditions and fresh local
+              ingredients. Along the coast, dishes are light and seafood-based,
+              while inland regions are known for richer, hearty meals.
+            </p>
+            <p>
+              Some of the most authentic specialties include
+              <strong>Paški sir</strong>, a famous sheep's milk cheese from the
+              island of Pag, known for its strong and distinctive taste
+              influenced by sea salt and wind. Traditional dishes like
+              <strong>peka</strong> are slow-cooked under a metal bell, creating
+              deep, rich flavors.
+            </p>
+            <p>
+              You'll also find classics such as <strong>crni rižot</strong>, a
+              black risotto made with cuttlefish ink and <strong>sarma</strong>,
+              cabbage rolls filled with minced meat and rice. Each dish reflects
+              the history and culture of its region.
+            </p>
+            <div class="food-images">
+              <div class="food-item">
+                <img src="../assets/images/paski-sir.jpg" alt="Paški sir" />
+                <p>Paški sir</p>
+              </div>
+              <div class="food-item">
+                <img src="../assets/images/peka.jpg" alt="Peka" />
+                <p>Peka</p>
+              </div>
+              <div class="food-item">
+                <img src="../assets/images/crni-rizot.jpg" alt="Crni rižot" />
+                <p>Crni rižot</p>
+              </div>
             </div>
-        </section>
-        <section id="food">
-            <h2>Food in Croatia</h2>
-            <p>Learn about the delicious cuisine of Croatia.</p>
-        </section>
-        <section id="culture">
-            <h2>Culture in Croatia</h2>
-            <p>Learn about the rich cultural heritage of Croatia.</p>
-        </section>
-        <section id="sports">
-            <h2>Sports in Croatia</h2>
-            <p>Learn about the sporting traditions of Croatia.</p>
-        </section>
-        <section id="history">
-            <h2>History in Croatia</h2>
-            <p>Learn about the fascinating history of Croatia.</p>
-        </section>
+            <p>
+              Whether you are dining by the Adriatic coast or in a traditional
+              inland village, Croatian food offers an authentic experience
+              rooted in simplicity, freshness, and tradition.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="section-img">
+            <img src="../assets/images/sports.avif" />
+          </div>
+          <div class="section-text border-right" id="sports">
+            <h2>Sports</h2>
+            <p>
+              Sport is a major part of Croatian identity and national pride.
+              Despite its small population, Croatia has achieved world-class
+              success across multiple disciplines, especially in team sports.
+            </p>
+            <p>
+              <strong>Football</strong> is the most popular sport, led by global
+              stars such as Luka Modrić and unforgettable performances at
+              international tournaments. Croatia reached the World Cup final in
+              2018, marking one of the greatest achievements in its history.
+            </p>
+            <p>
+              <strong>Handball</strong> has a long tradition of excellence, with
+              Olympic gold medals and world championship titles. Meanwhile,
+              <strong>water polo</strong> is one of the country’s most
+              successful sports, especially along the Adriatic coast.
+            </p>
+            <div class="sport-images">
+              <a href="https://hns.family/" class="sport-item" target="_blank">
+                <img
+                  src="../assets/images/hns.png"
+                  alt="Croatian Football Federation"
+                />
+                <p>HNS Family</p>
+              </a>
+              <a href="https://hrs.hr/" class="sport-item" target="_blank">
+                <img
+                  src="../assets/images/hrs.png"
+                  alt="Croatian Handball Federation"
+                />
+                <p>Croatian Handball Federation</p>
+              </a>
+              <a href="https://hvs.hr/" class="sport-item" target="_blank">
+                <img
+                  src="../assets/images/hvs.png"
+                  alt="Croatian Water Polo Federation"
+                />
+                <p>Croatian Water Polo Federation</p>
+              </a>
+            </div>
+            <p>
+              Croatian athletes continue to compete at the highest level, making
+              sport one of the strongest symbols of national pride.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="section-img">
+            <img src="../assets/images/destinations.jpg" />
+          </div>
+          <div class="section-text border-left" id="places">
+            <h2>Top Destinations</h2>
+            <p>
+              Croatia is known for its stunning coastline, historic cities, and
+              natural wonders. From ancient Roman architecture to crystal-clear
+              beaches, every destination offers something unique.
+            </p>
+            <div class="dest-images">
+              <a
+                href="https://tzdubrovnik.hr/"
+                target="_blank"
+                class="dest-item"
+              >
+                <img src="../assets/images/dubrovnik.jpg" alt="Dubrovnik" />
+                <p>Dubrovnik</p>
+              </a>
+              <a href="https://visithvar.hr/" target="_blank" class="dest-item">
+                <img src="../assets/images/hvar.jpg" alt="Hvar" />
+                <p>Hvar</p>
+              </a>
+              <a
+                href="https://www.discoverplitvice.com/"
+                target="_blank"
+                class="dest-item"
+              >
+                <img src="../assets/images/plitvice.jpg" alt="Plitvice Lakes" />
+                <p>Plitvice</p>
+              </a>
+              <a href="https://www.tzgz.hr/" target="_blank" class="dest-item">
+                <img src="../assets/images/zagreb.jpg" alt="Zagreb" />
+                <p>Zagreb</p>
+              </a>
+            </div>
+            <p>
+              Whether you're exploring historic cities or relaxing in nature,
+              Croatia offers unforgettable experiences for every type of
+              traveler.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="quote-section">
+        <blockquote class="quote-block">
+          <p class="quote-text">
+            "Travel is fatal to prejudice, bigotry, and narrow-mindedness, and
+            many of our people need it sorely on these accounts."
+          </p>
+          <cite class="quote-author">Mark Twain</cite>
+        </blockquote>
+      </section>
+      <section class="cta-section">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h3 class="cta-title">Ready to start exploring?</h3>
+            <p class="cta-subtitle">
+              Pick a country and begin your cultural journey today.
+            </p>
+          </div>
+          <div class="cta-buttons">
+            <a href="kenya.html" class="button button-outline-light">Kenya</a>
+            <a href="croatia.html" class="button button-outline-light"
+              >Croatia</a
+            >
+            <a href="albania.html" class="button button-outline-light"
+              >Albania</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>Copyright &copy;</p>
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo-link">
+            <img
+              src="https://fv5-3.files.fm/thumb_show.php?i=fm3wueypa3&view&v=1&PHPSESSID=87430cd6178df5c95ac52cfaa7c8d4dec4409ffa"
+              alt="CultureTrip"
+              class="logo-image"
+            />
+            <span class="logo-name"
+              >Culture<span class="logo-name-accent">Trip</span>
+            </span>
+          </a>
+          <p class="footer-tagline">Three countries. One shared world.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer page links">
+          <h4 class="footer-column-title">Pages</h4>
+          <ul class="footer-link-list">
+            <li><a href="../index.html" class="footer-link">Home</a></li>
+            <li><a href="kenya.html" class="footer-link">Kenya</a></li>
+            <li><a href="croatia.html" class="footer-link">Croatia</a></li>
+            <li><a href="albania.html" class="footer-link">Albania</a></li>
+          </ul>
+        </nav>
+        <div class="footer-team">
+          <h4 class="footer-column-title">Our Team</h4>
+          <ul class="footer-team-list">
+            <li>🌍 Kenya — Nairobi</li>
+            <li>🌍 Croatia — Zagreb</li>
+            <li>🌍 Albania — Tirana</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          Copyright &copy; 2025 CultureTrip. All rights reserved. Built with
+          HTML & CSS.
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
