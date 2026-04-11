@@ -7,37 +7,36 @@ the file structure.
 =========================================================*/
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../Fonts/static/Roboto-Light.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../Fonts/static/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../Fonts/static/Roboto-LightItalic.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../Fonts/static/Roboto-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../Fonts/static/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../Fonts/static/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../Fonts/static/Roboto-Bold.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../Fonts/static/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
-
 @font-face {
-  font-family: 'Roboto';
-  src: url('../Fonts/static/Roboto-Black.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../Fonts/static/Roboto-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -48,38 +47,35 @@ they can be used accross all pages of the website.
 ==========================================================*/
 
 :root {
- 
-  --dark:           #1F2937;   
-  --light:          #F9FAF8;   
-  --grey:           #E5E7EB;   
-  --blue:           #3882F6;   
-  --blue-hover:     #2563EB;   
-  --body-bg:        #ffffff;   
-  --text-main:      #1F2937;   
-  --text-muted:     #6B7280;   
-  --border-colour:  #D1D5DB;   
+  --dark: #1f2937;
+  --light: #f9faf8;
+  --grey: #e5e7eb;
+  --blue: #3882f6;
+  --blue-hover: #2563eb;
+  --body-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border-colour: #d1d5db;
 
   /* --- Font sizes (to be used according to the instructions) --- */
-  --size-hero:      48px;   
-  --size-logo:      24px;   
-  --size-nav:       18px;   
-  --size-heading:   36px;   
-  --size-body:      16px;   
-  --size-small:     14px;   
+  --size-hero: 48px;
+  --size-logo: 24px;
+  --size-nav: 18px;
+  --size-heading: 36px;
+  --size-body: 16px;
+  --size-small: 14px;
 
   /* ---- Spacing ---- */
-  --gap-sm:   16px;
-  --gap-md:   32px;
-  --gap-lg:   64px;
-  --gap-xl:   96px;
+  --gap-sm: 16px;
+  --gap-md: 32px;
+  --gap-lg: 64px;
+  --gap-xl: 96px;
 
   /* ---- Layout ---- */
-  --page-width: 1100px;   
-  --radius:     8px;     
-  --radius-lg:  12px;     
-
+  --page-width: 1100px;
+  --radius: 8px;
+  --radius-lg: 12px;
 }
-
 
 /* ============================================================
    RESET
@@ -98,7 +94,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--size-body);
   color: var(--text-main);
   background-color: var(--body-bg);
@@ -120,7 +116,6 @@ ul {
   list-style: none;
 }
 
-
 /* ============================================================
    LOGO IMAGE
    Circular logo that sits in the header and footer perfectly.
@@ -136,16 +131,15 @@ ul {
   width: 64px;
   height: 64px;
   object-fit: cover;
-  border-radius: 50%;           
+  border-radius: 50%;
   border: 2px solid var(--blue);
   flex-shrink: 0;
 }
 
-
 .logo-name {
-  font-size: var(--size-logo);   
+  font-size: var(--size-logo);
   font-weight: 900;
-  color: var(--light);           
+  color: var(--light);
   letter-spacing: -0.5px;
   line-height: 1;
 }
@@ -153,8 +147,6 @@ ul {
 .logo-name-accent {
   color: var(--blue);
 }
-
-
 
 /* ============================================================
    HEADER
@@ -177,7 +169,7 @@ ul {
   justify-content: space-between;
 }
 
-.nav a:hover:not(.active) {
+.nav li:hover:not(.active) {
   color: white;
   opacity: 0.7;
 }
@@ -188,11 +180,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
 .nav-item {
-    margin: 0;
-
+  margin: 0;
 }
 
 .nav-link {
@@ -201,7 +191,9 @@ ul {
   font-weight: 400;
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .nav-link:hover {
@@ -222,7 +214,10 @@ ul {
   font-weight: 700;
   padding: 12px 28px;
   border-radius: var(--radius);
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
   cursor: pointer;
 }
 
@@ -259,7 +254,6 @@ ul {
   background-color: var(--blue);
   color: var(--light);
 }
-
 
 /* ============================================================
    HERO SECTION
@@ -367,7 +361,9 @@ figure.hero-image-wrap {
   background-color: var(--body-bg);
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .country-card:hover {
@@ -445,7 +441,7 @@ figure.hero-image-wrap {
 
 .card-description {
   font-size: var(--size-small);
-  color: #4B5563;
+  color: #4b5563;
   line-height: 1.7;
   flex: 1;
 }
@@ -461,7 +457,6 @@ figure.hero-image-wrap {
   font-size: var(--size-small);
   color: var(--text-muted);
 }
-
 
 /* ============================================================
    STATS SECTION
@@ -601,7 +596,6 @@ figure.hero-image-wrap {
   align-items: start;
 }
 
-
 .footer-brand {
   display: flex;
   flex-direction: column;
@@ -610,7 +604,7 @@ figure.hero-image-wrap {
 
 .footer-tagline {
   font-size: var(--size-small);
-  color: #9CA3AF;
+  color: #9ca3af;
   max-width: 280px;
   line-height: 1.6;
   margin-top: 8px;
@@ -634,7 +628,7 @@ figure.hero-image-wrap {
 
 .footer-link {
   font-size: var(--size-small);
-  color: #9CA3AF;
+  color: #9ca3af;
   transition: color 0.2s ease;
 }
 
@@ -651,7 +645,7 @@ figure.hero-image-wrap {
 
 .footer-team-list li {
   font-size: var(--size-small);
-  color: #9CA3AF;
+  color: #9ca3af;
 }
 
 .footer-bottom {
@@ -662,9 +656,8 @@ figure.hero-image-wrap {
 
 .footer-copyright {
   font-size: var(--size-small);
-  color: #6B7280;
+  color: #6b7280;
 }
-
 
 /* ============================================================
    KENYA PAGE
@@ -701,7 +694,6 @@ figure.hero-image-wrap {
   line-height: 1.7;
 }
 
-
 /* ============================================================
    KENYA PAGE — CONTENT SECTIONS
    Styles for Destinations, Foods, and Culture sections.
@@ -713,9 +705,8 @@ figure.hero-image-wrap {
 }
 
 .content-section:nth-of-type(even) {
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
-
 
 .content-section-subtitle {
   text-align: center;
@@ -744,7 +735,6 @@ figure.hero-image-wrap {
   gap: var(--gap-md);
 }
 
-
 .feature-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -752,7 +742,9 @@ figure.hero-image-wrap {
   background-color: var(--body-bg);
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .feature-card:hover {
@@ -773,7 +765,6 @@ figure.hero-image-wrap {
   flex-direction: column;
   gap: 8px;
 }
-
 
 .feature-tag {
   display: inline-block;
@@ -796,7 +787,7 @@ figure.hero-image-wrap {
 
 .feature-card-text {
   font-size: var(--size-small);
-  color: #4B5563;
+  color: #4b5563;
   line-height: 1.7;
 }
 
@@ -927,6 +918,44 @@ figure.hero-image-wrap {
   padding: 14px 28px;
 }
 
+.mobile-menu{
+  display: none;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  list-style: none;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+.burger span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu[open] .burger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu[open] .burger span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu[open] .burger span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 /* ============================================================
    RESPONSIVENESS
    ============================================================ */
@@ -952,13 +981,11 @@ figure.hero-image-wrap {
   }
 }
 
-
 /* MOBILE (screens up to 650px wide) */
 
 @media (max-width: 650px) {
-
   :root {
-    --size-hero:    32px;
+    --size-hero: 32px;
     --size-heading: 24px;
   }
 
@@ -990,7 +1017,6 @@ figure.hero-image-wrap {
     gap: var(--gap-md);
   }
 
-  
   .quote-text {
     font-size: 20px;
   }
@@ -1002,13 +1028,30 @@ figure.hero-image-wrap {
 }
 
 /* VERY SMALL MOBILE (screens up to 480px wide) */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .nav-list,
   .nav-links {
     display: none;
   }
 
-  .nav {
-    justify-content: center;
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background: var(--dark);
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+    width: 200px;
+    background: rgba(31, 41, 55, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow:
+      0 4px 10px rgba(0, 0, 0, 0.2),
+      0 10px 25px rgba(0, 0, 0, 0.3);
   }
 }
