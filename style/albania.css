@@ -155,7 +155,7 @@
     border-radius: 20px;
   }
   
-  
+
   .albania-culture-section {
     background-color: var(--dark);
     padding: var(--gap-xl) var(--gap-md);
@@ -183,7 +183,6 @@
     line-height: 1.7;
   }
   
-  /* Three cards in a row using flexbox */
   .albania-culture-row {
     display: flex;
     gap: var(--gap-md);
@@ -239,7 +238,9 @@
     line-height: 1.6;
   }
   
-  
+  .footer {
+    border-top: 1px solid var(--light);
+  }
   
   @media (max-width: 900px) {
     .albania-cuisine-row {
