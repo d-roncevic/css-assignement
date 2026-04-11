@@ -1,0 +1,282 @@
+   .albania-hero {
+    background: linear-gradient(135deg, #ff0000 0%, var(--dark) 55%);
+  }
+  
+
+  .albania-hcard-list {
+    max-width: var(--page-width);
+    margin: var(--gap-lg) auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-md);
+  }
+  
+  .albania-hcard {
+    display: flex;
+    border: 1px solid var(--border-colour);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background-color: var(--body-bg);
+  }
+  
+  .albania-hcard:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .albania-hcard-img {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .albania-hcard-body {
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .albania-hcard-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark);
+  }
+  
+  .albania-hcard-text {
+    font-size: var(--size-body);
+    color: #4B5563;
+    line-height: 1.75;
+  }
+  
+
+  .albania-cuisine-section {
+    background-color: #F9FAFB;
+    padding: var(--gap-xl) var(--gap-md);
+  }
+  
+  .albania-cuisine-wrapper {
+    max-width: var(--page-width);
+    margin: 0 auto;
+  }
+  
+  .albania-cuisine-row {
+    display: flex;
+    gap: var(--gap-md);
+    margin-top: var(--gap-lg);
+    align-items: stretch;
+  }
+  
+  .albania-cuisine-featured {
+    flex: 1.6;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-colour);
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .albania-cuisine-featured img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .albania-cuisine-featured-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .albania-cuisine-featured-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark);
+  }
+  
+  .albania-cuisine-featured-text {
+    font-size: var(--size-body);
+    color: #4B5563;
+    line-height: 1.75;
+  }
+  
+  .albania-cuisine-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-md);
+  }
+  
+  .albania-cuisine-small {
+    flex: 1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border-colour);
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .albania-cuisine-small img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .albania-cuisine-small-body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .albania-cuisine-small-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+  
+  .albania-cuisine-small-text {
+    font-size: var(--size-small);
+    color: #4B5563;
+    line-height: 1.7;
+  }
+  
+  .albania-cuisine-tag {
+    display: inline-block;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+  
+  
+  .albania-culture-section {
+    background-color: var(--dark);
+    padding: var(--gap-xl) var(--gap-md);
+  }
+  
+  .albania-culture-wrapper {
+    max-width: var(--page-width);
+    margin: 0 auto;
+  }
+  
+  .albania-culture-title {
+    font-size: var(--size-heading);
+    font-weight: 800;
+    color: var(--light);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .albania-culture-subtitle {
+    font-size: var(--size-body);
+    color: var(--grey);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto var(--gap-lg);
+    line-height: 1.7;
+  }
+  
+  /* Three cards in a row using flexbox */
+  .albania-culture-row {
+    display: flex;
+    gap: var(--gap-md);
+  }
+  
+  .albania-culture-card {
+    flex: 1;
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 400px;
+  }
+  
+  .albania-culture-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .albania-culture-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .albania-culture-tag {
+    display: inline-block;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+    align-self: flex-start;
+  }
+  
+  .albania-culture-card-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .albania-culture-card-text {
+    font-size: var(--size-small);
+    color: rgba(255,255,255,0.82);
+    line-height: 1.6;
+  }
+  
+  
+  
+  @media (max-width: 900px) {
+    .albania-cuisine-row {
+      flex-direction: column;
+    }
+  
+    .albania-cuisine-side {
+      flex-direction: row;
+    }
+  
+    .albania-culture-row {
+      flex-wrap: wrap;
+    }
+  
+    .albania-culture-card {
+      flex: 1 1 calc(50% - var(--gap-md));
+    }
+  }
+  
+
+  @media (max-width: 650px) {
+    .albania-hcard,
+    .albania-hcard:nth-child(even) {
+      flex-direction: column;
+    }
+  
+    .albania-hcard-img {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .albania-cuisine-side {
+      flex-direction: column;
+    }
+  
+    .albania-culture-card {
+      flex: 1 1 100%;
+      height: 300px;
+    }
+  }
