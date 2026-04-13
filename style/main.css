@@ -1055,3 +1055,54 @@ figure.hero-image-wrap {
       0 10px 25px rgba(0, 0, 0, 0.3);
   }
 }
+
+
+/* ============================================================
+   COUNTRY COAT OF ARMS
+   ============================================================ */
+
+.country-coat-of-arms {
+  position: absolute;
+  top: 50%;
+  left: 180px;
+  transform: translateY(-50%);
+  width: 150px;
+  height: auto;
+  z-index: 2;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+
+.page-hero-label,
+.page-hero-title,
+.page-hero-description {
+  position: relative;
+  z-index: 3;
+}
+
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+
+@media (max-width: 1200px) {
+  .country-coat-of-arms {
+    left: 100px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .country-coat-of-arms {
+    left: 60px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .country-coat-of-arms {
+    display: none;
+  }
+}
